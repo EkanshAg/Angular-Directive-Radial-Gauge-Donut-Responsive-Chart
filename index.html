@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radial</title>
+<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="jqueryv2.2.5.js"></script>
+	<script type="text/javascript" src="d3.min.js"></script>	
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="radialGuageChartDirective.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+<!--Either give div block with it's height and width in em or px
+or give the width and height of custom-radial-gauge in px or em-->
+<div style="height:15em;max-width:48em;border:2px solid black">
+<custom-radial-gauge width="100%" id="svg3" height=100% sideFont="15" middleFont="50" color1='rgb(253, 129, 126)' color2='rgb(233,233,233)'>
+					<svg id="svg3"></svg>
+</custom-radial-gauge>
+</div>
+	
+	
+</body>
+</html>
